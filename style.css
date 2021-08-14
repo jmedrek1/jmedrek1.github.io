@@ -103,7 +103,7 @@ nav .fa{
 		position: absolute;
 		background: var(--highlight);
 		height: 100vh;
-		width: 1500px;
+		width: 150px;
 		top: 0;
 		right: -150px;
 		text-align: left;
