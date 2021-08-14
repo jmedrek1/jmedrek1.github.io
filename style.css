@@ -71,12 +71,6 @@ nav{
 	font-size: 20px;
 	color: var(--font-color);
 }
-.summary-text img{
-	width: 233px;
-	height: 289px;
-	margin-left: 75px;
-	margin-bottom: 10px;
-}
 .email-link{
 	display: inline-block;
 	text-decoration: none;
