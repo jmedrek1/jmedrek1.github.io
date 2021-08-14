@@ -102,6 +102,12 @@ nav .fa{
 	.summary-text h1{
 		font-size: 20px;
 	}
+	.summary-text img{
+		width: 93px;
+		height: 115px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
 	.nav-links ul li{
 		display: block;
 	}
