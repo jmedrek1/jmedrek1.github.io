@@ -3,6 +3,10 @@
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
+:root{
+	--highlight: #36f4a5;
+	--font-color: #fff;
+}
 .header{
 	min-height: 100vh;
 	width: 100%;
@@ -28,7 +32,7 @@ nav{
 	position: relative;
 }
 .nav-links ul li a{
-	color: #fff;
+	color: var(--font-color);
 	text-decoration: none;
 	font-size: 13px;
 
@@ -37,7 +41,7 @@ nav{
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: #f44336;
+	background: var(--highlight);
 	display: block;
 	margin: auto;
 	transition: 0.5s;
@@ -46,13 +50,13 @@ nav{
 	content: '';
 	width: 100%;
 	height: 2px;
-	background: #f44336;
+	background: var(--highlight);
 	display: block;
 	margin: auto;
 }
 .summary-text{
 	width: 90%;
-	color: #fff;
+	color: var(--font-color);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -65,13 +69,19 @@ nav{
 .summary-text p{
 	margin: 10px 0 40px;
 	font-size: 20px;
-	color: #fff;
+	color: var(--font-color);
+}
+.summary-text img{
+	width: 233px;
+	height: 289px;
+	margin-left: 75px;
+	margin-bottom: 10px;
 }
 .email-link{
 	display: inline-block;
 	text-decoration: none;
-	color: #fff;
-	border: 1px solid #fff;
+	color: var(--font-color);
+	border: 1px solid var(--font-color);
 	padding: 12px 34px;
 	font-size: 20px;
 	background: transparent;
@@ -79,8 +89,8 @@ nav{
 	cursor: pointer;
 }
 .email-link:hover{
-	border: 1px solid #f44336;
-	background: #f44336;
+	border: 1px solid var(--highlight);
+	background: var(--highlight);
 	transition: 1s;
 }
 
@@ -97,7 +107,7 @@ nav .fa{
 	}
 	.nav-links{
 		position: absolute;
-		background: #f44336;
+		background: var(--highlight);
 		height: 100vh;
 		width: 1500px;
 		top: 0;
@@ -108,7 +118,7 @@ nav .fa{
 	}
 	nav .fa{
 		display: block;
-		color: #fff;
+		color: var(--font-color);
 		margin: 10px;
 		font-size: 22px;
 		cursor: pointer;
