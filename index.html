@@ -1,53 +1,112 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Medrek</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-</head>
-<body>
-  <section class="header">
-    <nav>
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="https://www.linkedin.com/in/john-medrek-072a31212/" target="_blank">LINKEDIN</a></li>
-          <li><a href="https://github.com/jmedrek1" target="_blank">GITHUB</a></li>
-        </ul>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Medrek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!--Header-->
+    <header>
+
+      <div class="logo">
+        <img src="johnmedrek-logo.png" alt="">
       </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
 
-  <div class="summary-text">
-    <img src="IMG_0092.JPG">
-    <h1>John Medrek</h1>
-    <p>I'm John, an aspiring software engineer and freshman at the University of Connecticut. 
-    <br>On this page you can view my projects and contact information.</p>
-    <a href="mailto:jmedrek2003@gmail.com" class="email-link">jmedrek2003@gmail.com</a>
-  </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    
+    <!--Introduction-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>John Medrek</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">CS STUDENT</p>
+      <img src="johnmedrek-portrait.JPG" alt="a picture of John Medrek" class="intro__img">
+    </section>
+
+    <!--About Me-->
+    <section class="about-me-container">
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Computer Science Student at UConn</p>
   
-  </section>
-
-  <!--JavaScript for Toggle Menu-->
-  <script>
-
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-      navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-      navLinks.style.right = "-200px";
-    }
-
-  </script>
+        <div class="about-me__body">
+          <p>I've lived in the New England Area all my life. Born in Massachusetts, raised in Connecticut. Living here provided 
+            me with the opportunity to go to CREC's Academy of Aerospace and Engineering, a magnet high school in greater Hartford. 
+            At my high school, I was able to pursue computer science, my favorite school subject and my current college major.
+          </p>
+          <p>I am currently a freshman at the University of Connecticut, studying computer science in the honors program. My
+            learning enviornment will provide me with the opportunity to expand as a programmer and as a person. When I graduate in 2025,
+            I plan to become a software engineer.
+          </p>
+        </div>
   
-</body>
+        <img src="johnmedrek-standing.jpg" alt="John standing in a street" class="about-me__img">
+      </section>
+    </section>
+
+    <!--Projects-->
+    <section class="projects" id="projects">
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">What I've done in my spare time</p>
+      <div class="portfolio">
+
+        <!--Portfolio item 01-->
+        <a href="portfolio-item-01.html" class="portfolio__item">
+          <img src="shamrock.png" alt="The Adventures of Shamrock Sholmes" class="portfolio__img">
+        </a>
+
+        <!--Portfolio item 02-->
+        <a href="portfolio-item-02.html" class="portfolio__item">
+          <img src="you-dodged-a-bullet.png" alt="You Dodged a Bullet" class="portfolio__img">
+        </a>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:jmedrek2003@gmail.com" class="footer-link">jmedrek2003@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/john-medrek-072a31212/" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/jmedrek1" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://docs.google.com/document/d/19Foi02SINpll4nOACN4ricSessI7Eqr3CqIbGtC-25M/edit?usp=sharing" target="blank">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+  </body>
 </html>
