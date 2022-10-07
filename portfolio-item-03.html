@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Medrek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <header>
+
+      <!--Header-->
+      <div class="logo">
+        <img src="johnmedrek-logo.png" alt="">
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        WellSCAN <strong>CFNI Calculator</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">September 2022</p>
+      <img src="cfni-calculator.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>This was my starter project as a new developer for <a href="https://dxgroup.core.uconn.edu/">Squared Labs/DXG</a>. Super basic
+        idea, but pretty well executed with positive feedback. The UConn Rudd Center reached out to Squared Labs and asked us to create a
+        "health index" calculator for WellSCAN (another Squared Labs project) based on the proportion of healthy, medium and unhealthy foods entered in.
+        </p>
+      <p>The building of this <a href="https://uconndxlab.github.io/cfni-calculator/">CFNI calculator</a> helped me expand my knowledge of JavaScript 
+        along with Git and source control. Being able to initiate a pull request and to push to a new branch is useful for me to know going into the software industry.
+      </p>
+      <p>The final product was delivered to UConn's Rudd Center with some rudimentary CSS, possibly improved in the future.
+      </p>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:jmedrek2003@gmail.com" class="footer-link">jmedrek2003@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/john-medrek-072a31212/" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/jmedrek1" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://docs.google.com/document/d/19Foi02SINpll4nOACN4ricSessI7Eqr3CqIbGtC-25M/edit?usp=sharing" target="blank">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

@@ -403,3 +403,11 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.portfolio-item-individual a {
+    color: var(--color-dark);
+}
+
+.portfolio-item-individual a:hover {
+    background: var(--color-accent);
+}
