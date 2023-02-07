@@ -1,0 +1,79 @@
+@import "style.css";
+
+:root {
+    --color-light: #fff;
+    --color-dark: #303030;
+    --color-accent: #809bf1;
+}
+
+body {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.section__subtitle--about,
+.section__subtitle--intro {
+    background: var(--color-accent);
+}
+
+.section__subtitle--projects {
+    color: var(--color-accent);
+}
+
+#theme-toggle {
+    border-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+#theme-toggle:hover {
+    background: var(--color-accent);
+}
+
+.nav {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+.nav__link:hover {
+    color: var(--color-accent);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--color-accent);
+}
+
+.about-me-container {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.about-me__link {
+    color: var(--color-light);
+}
+
+.about-me__link:hover {
+    background: var(--color-accent);
+}
+
+.portfolio__item {
+    background: var(--color-accent);
+}
+
+.portfolio__img {
+    border: 2px solid var(--color-accent);
+}
+
+.footer {
+    background: #111;
+    color: var(--color-accent);
+}
+
+.portfolio-item-individual a {
+    color: var(--color-dark);
+}
+
+.portfolio-item-individual a:hover {
+    background: var(--color-accent);
+}

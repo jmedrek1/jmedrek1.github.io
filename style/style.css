@@ -12,10 +12,6 @@
 
     --fw-reg: 300;
     --fw-bold: 900;
-
-    --color-light: #fff;
-    --color-dark: #303030;
-    --color-accent: #809bf1;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -42,8 +38,6 @@ html {
 }
 
 body {
-    background: var(--color-light);
-    color: var(--color-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -93,14 +87,12 @@ h3 { font-size: var(--fs-h3); }
 
 .section__subtitle--about,
 .section__subtitle--intro {
-    background: var(--color-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
 
 .section__subtitle--projects {
-    color: var(--color-accent);
     font-weight: var(--fw-bold);
 }
 
@@ -109,17 +101,30 @@ h3 { font-size: var(--fs-h3); }
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
     padding: 1em;
 }
 
 .logo {
     max-width: 100px;
+    position: absolute;
+}
+
+.theme-toggle {
+    margin: 0 auto;
+}
+
+#theme-toggle {
+    background: none;
+    width: 175px;
+    border-radius: 25px;
+    font-family: var(--ff-secondary);
+    font-size: 13px;
 }
 
 .nav {
     position: fixed;
-    background: var(--color-dark);
-    color: var(--color-light);
     top: 0;
     bottom: 0;
     left: 0;
@@ -146,10 +151,6 @@ header {
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
-}
-
-.nav-link:hover {
-    color: var(--color-accent);
 }
 
 .nav-toggle {
@@ -191,7 +192,6 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--color-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -253,11 +253,6 @@ header {
     }
 }
 
-.about-me-container {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-}
-
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -265,14 +260,6 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
-}
-
-.about-me__link {
-    color: var(--color-light);
-}
-
-.about-me__link:hover {
-    background: var(--color-accent);
 }
 
 @media (min-width: 600px) {
@@ -323,7 +310,6 @@ header {
 }
 
 .portfolio__item {
-    background: var(--color-accent);
     overflow: hidden;
 }
 
@@ -331,7 +317,6 @@ header {
     transition: 
         transform 500ms cubic-bezier(0.5, 0, 0.5, 1),
         opacity 250ms linear;
-    border: 2px solid var(--color-accent);
 }
 
 .portfolio__item:focus {
@@ -348,8 +333,6 @@ header {
 /* Footer */
 
 .footer {
-    background: #111;
-    color: var(--color-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -402,12 +385,4 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.portfolio-item-individual a {
-    color: var(--color-dark);
-}
-
-.portfolio-item-individual a:hover {
-    background: var(--color-accent);
 }
