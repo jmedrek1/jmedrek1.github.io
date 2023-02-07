@@ -117,6 +117,7 @@ header {
 
 #theme-toggle {
     background: none;
+    outline: none;
     width: 175px;
     border-radius: 25px;
     font-family: var(--ff-secondary);
