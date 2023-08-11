@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Medrek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="style/light-theme.css">
+
+  </head>
+  <body>
+    <header>
+
+      <!--Header-->
+      <div class="logo">
+        <img src="img/johnmedrek-logo.png" alt="">
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        <strong>VisTSN</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Aug 2023</p>
+      <img src="img/vistsn.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>Shortly after working on <a href="portfolio-item-07.html">VeRNet</a> at <a href="https://cps.cse.uconn.edu/" target="blank">UConn's CPS Lab</a>, I got introduced to VisTSN, another project in the works. Similar to VeRNet, This project uses a similar tech stack to VeRNet - 
+        Vue.js, Apache ECharts, and TypeScript. Unlike VeRNet, where most of my additions have been purely on the frontend, VisTSN has allowed me to use TypeScript and ECharts' API to fetch backend data.
+      </p>
+      <p>The app simulates a network similar to VeRNet's, but instead of a 3D simulation, shows several charts (thank you ECharts) that depict different qualities of the network in real time, i.e. 
+        packet scheduling, event logging, and the bandwidth and delay of each node in the network. VisTSN is not currently hosted online, but will be soon!
+      </p>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:jmedrek2003@gmail.com" class="footer-link">jmedrek2003@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/john-medrek-072a31212/" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/jmedrek1" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://docs.google.com/document/d/19Foi02SINpll4nOACN4ricSessI7Eqr3CqIbGtC-25M/edit?usp=sharing" target="blank">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

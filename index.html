@@ -1,132 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Medrek</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>John Medrek</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+		
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style/style.css">
+        <link id="theme" rel="stylesheet" type="text/css" href="style/light-theme.css">
+
+    </head>
+    <body>
+
+        <!--Header-->
+        <header>
+
+            <div class="logo">
+                <img src="img/johnmedrek-logo.png" alt="">
+            </div>
+
+            <div class="theme-toggle" tabindex="0">
+                <button id="theme-toggle">Switch to dark mode</button>
+            </div>
+            
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        
+        <!--Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm <strong>John Medrek</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">SOFTWARE DEVELOPER</p>
+            <img src="img/johnmedrek-portrait.jpg" alt="a picture of John Medrek" class="intro__img">
+        </section>
+
+        <!--About Me-->
+        <section class="about-me-container">
+            <section class="about-me" id="about">
+                <h2 class="section__title section__title--about">Who I am</h2>
+                <p class="section__subtitle section__subtitle--about">Computer Science Student at UConn</p>
     
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+                <div class="about-me__body">
+                    <p>I've lived in the New England Area all my life. Born in Massachusetts, raised in Connecticut. Living here provided 
+                        me with the opportunity to go to CREC's Academy of Aerospace and Engineering, a magnet high school in greater Hartford. 
+                        At my high school, I was able to pursue my favorite school subject and my current college major.
+                    </p>
+                    <p>Right now I'm a sophomore at the University of Connecticut, studying computer science in the honors program. I'm also a software developer for
+                        Squared Labs, a division of UConn's <a href="https://dxgroup.core.uconn.edu/" target="blank" class="about-me__link">Digital Experience Group</a>. 
+                        When I graduate in 2025, I plan to become a software engineer.
+                    </p>
+                </div>
     
-    <link rel="stylesheet" href="style/style.css">
-    <link id="theme" rel="stylesheet" type="text/css" href="style/light-theme.css">
+                <img src="img/johnmedrek-standing.jpg" alt="John standing on a hike in the Rockies" class="about-me__img">
+            </section>
+        </section>
 
-  </head>
-  <body>
+        <!--Projects-->
+        <section class="projects" id="projects">
+            <h2 class="section__title section__title--projects">My Projects</h2>
+            <p class="section__subtitle section__subtitle--projects">What I've accomplished as a developer</p>
+            <div class="portfolio">
 
-    <!--Header-->
-    <header>
+                <!--Portfolio item 01 - Shamrock Sholmes-->
+                <a href="portfolio-item-01.html" class="portfolio__item">
+                    <img src="img/shamrock.png" alt="The Adventures of Shamrock Sholmes" class="portfolio__img">
+                </a>
 
-      <div class="logo">
-        <img src="img/johnmedrek-logo.png" alt="">
-      </div>
+                <!--Portfolio item 02 - You Dodged a Bullet-->
+                <a href="portfolio-item-02.html" class="portfolio__item">
+                    <img src="img/you-dodged-a-bullet.png" alt="You Dodged a Bullet" class="portfolio__img">
+                </a>
 
-      <div class="theme-toggle" tabindex="0">
-        <button id="theme-toggle">Switch to dark mode</button>
-      </div>
-      
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
+                <!--Portfolio item 03 - CFNI Calculator-->
+                <a href="portfolio-item-03.html" class="portfolio__item">
+                    <img src="img/cfni-calculator.png" alt="CFNI Calculator" class="portfolio__img">
+                </a>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
-        </ul>
-      </nav>
+                <!--Portfolio item 04 - Grant Trails-->
+                <a href="portfolio-item-04.html" class="portfolio__item">
+                    <img src="img/ct-vector.png" alt="Grant Trails" class="portfolio__img">
+                </a>
 
-    </header>
-    
-    <!--Introduction-->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I'm <strong>John Medrek</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">SOFTWARE DEVELOPER</p>
-      <img src="img/johnmedrek-portrait.jpg" alt="a picture of John Medrek" class="intro__img">
-    </section>
+                <!--Portfolio item 05 - BCM App-->
+                <a href="portfolio-item-05.html" class="portfolio__item">
+                    <img src="img/bcm-plant.jpeg" alt="BCM App" class="portfolio__img">
+                </a>
 
-    <!--About Me-->
-    <section class="about-me-container">
-      <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Computer Science Student at UConn</p>
-  
-        <div class="about-me__body">
-          <p>I've lived in the New England Area all my life. Born in Massachusetts, raised in Connecticut. Living here provided 
-            me with the opportunity to go to CREC's Academy of Aerospace and Engineering, a magnet high school in greater Hartford. 
-            At my high school, I was able to pursue my favorite school subject and my current college major.
-          </p>
-          <p>Right now I'm a sophomore at the University of Connecticut, studying computer science in the honors program. I'm also a software developer for
-            Squared Labs, a division of UConn's <a href="https://dxgroup.core.uconn.edu/" target="blank" class="about-me__link">Digital Experience Group</a>. 
-            When I graduate in 2025, I plan to become a software engineer.
-          </p>
-        </div>
-  
-        <img src="img/johnmedrek-standing.jpg" alt="John standing on a hike in the Rockies" class="about-me__img">
-      </section>
-    </section>
+                <!--Portfolio item 06 - Student Timesheet-->
+                <a href="portfolio-item-06.html" class="portfolio__item">
+                    <img src="img/COR2E-student-timesheet.png" alt="Student Timesheet" class="portfolio__img">
+                </a>
 
-    <!--Projects-->
-    <section class="projects" id="projects">
-      <h2 class="section__title section__title--projects">My Projects</h2>
-      <p class="section__subtitle section__subtitle--projects">What I've accomplished as a developer</p>
-      <div class="portfolio">
+                <!--Portfolio item 07 - VeRNet-->
+                <a href="portfolio-item-07.html" class="portfolio__item">
+                    <img src="img/vernet.png" alt="VeRNet" class="portfolio__img">
+                </a>
 
-        <!--Portfolio item 01 - Shamrock Sholmes-->
-        <a href="portfolio-item-01.html" class="portfolio__item">
-          <img src="img/shamrock.png" alt="The Adventures of Shamrock Sholmes" class="portfolio__img">
-        </a>
+                <!--Portfolio item 08 - VisTSN-->
+                <a href="portfolio-item-08.html" class="portfolio__item">
+                    <img src="img/vistsn.png" alt="VisTSN" class="portfolio__img">
+                </a>
 
-        <!--Portfolio item 02 - You Dodged a Bullet-->
-        <a href="portfolio-item-02.html" class="portfolio__item">
-          <img src="img/you-dodged-a-bullet.png" alt="You Dodged a Bullet" class="portfolio__img">
-        </a>
-
-        <!--Portfolio item 03 - CFNI Calculator-->
-        <a href="portfolio-item-03.html" class="portfolio__item">
-          <img src="img/cfni-calculator.png" alt="CFNI Calculator" class="portfolio__img">
-        </a>
-
-        <!--Portfolio item 04 - Grant Trails-->
-        <a href="portfolio-item-04.html" class="portfolio__item">
-          <img src="img/ct-vector.png" alt="Grant Trails" class="portfolio__img">
-        </a>
-
-        <!--Portfolio item 05 - BCM App-->
-        <a href="portfolio-item-05.html" class="portfolio__item">
-          <img src="img/bcm-plant.jpeg" alt="BCM App" class="portfolio__img">
-        </a>
-      </div>
-    </section>
-    
-    <!--Footer-->
-    <footer class="footer">
-      <a href="mailto:jmedrek2003@gmail.com" class="footer-link">jmedrek2003@gmail.com</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/john-medrek-072a31212/" target="blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/jmedrek1" target="blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://docs.google.com/document/d/19Foi02SINpll4nOACN4ricSessI7Eqr3CqIbGtC-25M/edit?usp=sharing" target="blank">
-            <i class="fas fa-file-alt"></i>
-          </a>
-        </li>
-      </ul>
-    </footer>
+                <!--Portfolio item 09 - Random Stock Picker-->
+                <a href="portfolio-item-09.html" class="portfolio__item">
+                    <img src="img/stock-picker.png" alt="Random Stock Picker" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:jmedrek2003@gmail.com" class="footer-link">jmedrek2003@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/john-medrek-072a31212/" target="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jmedrek1" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://docs.google.com/document/d/19Foi02SINpll4nOACN4ricSessI7Eqr3CqIbGtC-25M/edit?usp=sharing" target="blank">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
 
 
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 
-  </body>
+    </body>
 </html>
