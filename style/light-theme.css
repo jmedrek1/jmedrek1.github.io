@@ -51,6 +51,8 @@ body {
 
 .about-me__link {
     color: var(--color-light);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, var(--color-accent) 65%);
+    text-decoration: none;
 }
 
 .about-me__link:hover {
@@ -72,6 +74,8 @@ body {
 
 .portfolio-item-individual a {
     color: var(--color-dark);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, var(--color-accent) 65%);
+    text-decoration: none;
 }
 
 .portfolio-item-individual a:hover {

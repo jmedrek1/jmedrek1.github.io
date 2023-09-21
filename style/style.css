@@ -7,8 +7,8 @@
 /* Custom Properties - can be updated at any point later on */
 
 :root {
-    --ff-primary: "Source Sans Pro", sans-serif;
-    --ff-secondary: "Source Code Pro", sans-serif;
+    --ff-primary: "Source Sans Pro";
+    --ff-secondary: "Source Code Pro";
 
     --fw-reg: 300;
     --fw-bold: 900;
